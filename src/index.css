@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-ink: #0c0c1d;
+  --color-accent: #4f46e5;
+}
+
+html {
+  font-family: var(--font-body);
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+/* Hide native cursor on devices with a fine pointer (custom cursor takes over) */
+@media (pointer: fine) {
+  body,
+  body * {
+    cursor: none !important;
+  }
+}
+
+::selection {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+/* Subtle engineering-paper dot grid */
+.dot-grid {
+  background-image: radial-gradient(circle, #d8d9e6 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Outlined display text */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px #0c0c1d;
+}
+
+@media (max-width: 640px) {
+  .text-outline {
+    -webkit-text-stroke-width: 1.3px;
+  }
+}
+
+/* Blinking caret for typewriter */
+.caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.1em;
+  background: #4f46e5;
+  margin-left: 6px;
+  vertical-align: text-bottom;
+  animation: blink 0.9s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Marquee strips */
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee.reverse {
+  animation-direction: reverse;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Slow-spinning circular badge */
+.spin-slow {
+  animation: spin 18s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Link hover underline sweep */
+.link-sweep {
+  position: relative;
+}
+
+.link-sweep::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background: #4f46e5;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-sweep:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
