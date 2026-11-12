@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Portofolio Dzaki Althalsyah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 landscape; margin: 0; }
+  :root {
+    --ink: #0E0E1A; --ink2: #2A2A3C; --muted: #6B6B80; --line: #E3E3EC;
+    --paper: #FFFFFF; --soft: #F5F5FA; --accent: #4F46E5; --accent-soft: #EEF0FF;
+    --red: #DC2626; --green: #16A34A; --amber: #D97706;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--paper); }
+  body { font-family: Inter, "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.5;
+         -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 297mm; height: 210mm; padding: 14mm 16mm 12mm; position: relative; overflow: hidden; page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .mono { font-family: "JetBrains Mono", Consolas, monospace; }
+  h1, h2, h3 { font-family: "Space Grotesk", Inter, sans-serif; letter-spacing: -0.02em; line-height: 1.05; }
+  .kicker { font-family: "JetBrains Mono", monospace; font-size: 8.5pt; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; }
+  .foot { position: absolute; left: 16mm; right: 16mm; bottom: 7mm; display: flex; justify-content: space-between;
+          font-family: "JetBrains Mono", monospace; font-size: 7.5pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 2.2mm; }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .chip { font-family: "JetBrains Mono", monospace; font-size: 7.6pt; border: 1px solid var(--ink); padding: 1.5px 6px; text-transform: uppercase; letter-spacing: 0.03em; }
+  .chip.a { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .lbl { font-family: "JetBrains Mono", monospace; font-size: 7.8pt; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1.2mm; }
+  p { color: var(--ink2); }
+  ul.dot { list-style: none; }
+  ul.dot li { position: relative; padding-left: 13px; margin: 1.3mm 0; color: var(--ink2); }
+  ul.dot li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 6px; height: 6px; background: var(--accent); }
+  .shot { border: 1px solid var(--line); box-shadow: 0 6px 18px rgba(14,14,26,0.12); display: block; }
+  .caption { font-family: "JetBrains Mono", monospace; font-size: 7.4pt; color: var(--muted); margin-top: 2mm; }
+
+  /* Case study header */
+  .cs-head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--ink); padding-bottom: 3mm; margin-bottom: 5mm; }
+  .cs-head .num { font-family: "Space Grotesk"; font-size: 44pt; font-weight: 700; color: var(--accent); line-height: 0.85; margin-right: 5mm; }
+  .cs-head h2 { font-size: 25pt; }
+  .cs-head .meta { text-align: right; font-family: "JetBrains Mono", monospace; font-size: 8pt; color: var(--muted); line-height: 1.6; }
+  .stat { border-left: 3px solid var(--accent); padding: 1mm 0 1mm 3.5mm; }
+  .stat b { font-family: "Space Grotesk"; font-size: 20pt; display: block; line-height: 1.05; letter-spacing: -0.02em; }
+  .stat span { font-size: 8.4pt; color: var(--muted); }
+
+  /* Flow diagram */
+  .flow { display: flex; align-items: stretch; gap: 0; }
+  .flow .step { flex: 1; background: var(--soft); border: 1px solid var(--line); padding: 2.6mm 3mm; font-size: 8.6pt; }
+  .flow .step b { display: block; font-family: "Space Grotesk"; font-size: 9.6pt; margin-bottom: 0.6mm; }
+  .flow .step .t { font-family: "JetBrains Mono"; font-size: 7pt; color: var(--accent); }
+  .flow .arr { width: 6mm; display: flex; align-items: center; justify-content: center; color: var(--accent); font-weight: 700; font-size: 12pt; }
+  .term { background: #0D1117; color: #C9D1D9; font-family: "JetBrains Mono", monospace; font-size: 8.4pt; line-height: 1.6; padding: 5mm 5.5mm; border-radius: 3px; white-space: pre; }
+  .term .r { color: #F87171; font-weight: 700; } .term .y { color: #FBBF24; } .term .g { color: #4ADE80; } .term .m { color: #8B949E; } .term .b { color: #A5B4FC; }
+</style>
+</head>
+<body>
+
+<!-- ============ 1. COVER ============ -->
+<section class="page" style="background: var(--ink); color: #fff; padding: 16mm 18mm;">
+  <div style="position:absolute; inset:0; background-image: radial-gradient(rgba(255,255,255,0.09) 1px, transparent 1px); background-size: 6mm 6mm;"></div>
+  <div style="position:relative; height:100%; display:flex; flex-direction:column;">
+    <div style="display:flex; justify-content:space-between;" class="mono">
+      <span style="font-size:9pt; color:#A5B4FC;">DZ//ALTH</span>
+      <span style="font-size:8.5pt; color:#9CA3AF;">PORTOFOLIO 2026 · IT DEVELOPMENT</span>
+    </div>
+    <div style="margin-top: 22mm;">
+      <div class="mono" style="font-size:9pt; color:#9CA3AF; letter-spacing:0.08em;">// SOFTWARE, AI, DAN DATA</div>
+      <h1 style="font-size: 76pt; margin-top: 4mm; font-weight:700;">DZAKI</h1>
+      <h1 style="font-size: 76pt; font-weight:700; color: transparent; -webkit-text-stroke: 1.6px #fff;">ALTHALSYAH</h1>
+      <div class="mono" style="margin-top:6mm; font-size:11pt; color:#A5B4FC;">$ whoami <span style="color:#6B7280;">→</span> <span style="color:#fff;">AI Engineer Intern · Mahasiswa Sistem Informasi</span></div>
+      <p style="color:#D1D5DB; font-size:11.5pt; max-width: 150mm; margin-top: 3mm;">Saya membangun software yang memangkas pekerjaan manual: dari aplikasi validasi kontrak berbasis AI di Pertamina sampai model machine learning yang disajikan lewat API dan aplikasi.</p>
+    </div>
+    <div style="margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; gap:12mm;">
+      <div class="mono" style="font-size:8.6pt; color:#D1D5DB; line-height:1.9;">
+        dz4ic7@gmail.com · +62 811-7818-801<br>
+        github.com/dzakialthalsy · linkedin.com/in/dzaki-althalsyah-27z<br>
+        dzaki-althalsyah-portofolio.vercel.app · Malang, Jawa Timur
+      </div>
+      <div style="min-width: 88mm; border-top:1px solid #3F3F55;">
+        <div class="mono" style="font-size:7.6pt; color:#9CA3AF; margin:2.5mm 0 1.5mm; letter-spacing:0.08em;">ISI</div>
+        <table class="mono" style="font-size:8.6pt; color:#E5E7EB; border-collapse:collapse; width:100%;">
+          <tr><td style="color:#A5B4FC; padding:0.6mm 4mm 0.6mm 0;">01</td><td>Tentang Saya dan Keahlian</td><td style="text-align:right; color:#6B7280;">02</td></tr>
+          <tr><td style="color:#A5B4FC; padding:0.6mm 4mm 0.6mm 0;">02</td><td>VASKO · Pertamina Patra Niaga</td><td style="text-align:right; color:#6B7280;">03</td></tr>
+          <tr><td style="color:#A5B4FC; padding:0.6mm 4mm 0.6mm 0;">03</td><td>SMS Guard dan URL Detection API</td><td style="text-align:right; color:#6B7280;">04</td></tr>
+          <tr><td style="color:#A5B4FC; padding:0.6mm 4mm 0.6mm 0;">04</td><td>F1 Pit Stop Predictor</td><td style="text-align:right; color:#6B7280;">05</td></tr>
+          <tr><td style="color:#A5B4FC; padding:0.6mm 4mm 0.6mm 0;">05</td><td>Proyek Lainnya</td><td style="text-align:right; color:#6B7280;">06-07</td></tr>
+          <tr><td style="color:#A5B4FC; padding:0.6mm 4mm 0.6mm 0;">06</td><td>Pengalaman dan Kontak</td><td style="text-align:right; color:#6B7280;">08</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. TENTANG ============ -->
+<section class="page">
+  <div class="kicker">01 / Tentang Saya</div>
+  <div style="display:grid; grid-template-columns: 1.05fr 1fr; gap: 14mm; margin-top: 4mm;">
+    <div>
+      <h2 style="font-size: 27pt;">Mahasiswa Sistem Informasi yang suka <span style="color:var(--accent);">membangun hal yang benar-benar dipakai.</span></h2>
+      <p style="margin-top:5mm; font-size:10.5pt;">Saya Dzaki, mahasiswa S1 Sistem Informasi semester 5 di Fakultas Ilmu Komputer Universitas Brawijaya. Saat ini saya magang sebagai AI Engineer di PT Pertamina Patra Niaga lewat Pertamina Camp 2026, memegang backend dan integrasi AI untuk aplikasi validasi kontrak.</p>
+      <p style="margin-top:3mm; font-size:10.5pt;">Di kampus saya menjadi asisten praktikum Administrasi Basis Data di Laboratorium Sistem Informasi, Vice Chair of Human Resources di POROS FILKOM UB, dan staf divisi Cyber Security. Saya paling senang mengerjakan proyek yang menggabungkan backend, data, dan AI menjadi satu produk utuh.</p>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 5mm 8mm; margin-top: 8mm;">
+        <div class="stat"><b>45%</b><span>lebih cepat validasi paket kontrak 268 halaman scan (VASKO)</span></div>
+        <div class="stat"><b>95,9%</b><span>akurasi model prediksi pit stop F1 (LightGBM)</span></div>
+        <div class="stat"><b>10+</b><span>proyek software, ML, dan keamanan di GitHub</span></div>
+        <div class="stat"><b>3</b><span>organisasi dan lab teknologi di FILKOM UB</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="lbl">Keahlian Teknis</div>
+      <div style="display:grid; gap: 4.2mm; margin-top: 2mm;">
+        <div><div style="font-family:'Space Grotesk'; font-weight:600; margin-bottom:1.3mm;">Backend dan Web</div>
+          <div class="chips"><span class="chip a">TypeScript</span><span class="chip a">Next.js</span><span class="chip">React</span><span class="chip a">FastAPI</span><span class="chip">Laravel</span><span class="chip">Prisma</span><span class="chip">Tailwind CSS</span><span class="chip">REST API</span></div></div>
+        <div><div style="font-family:'Space Grotesk'; font-weight:600; margin-bottom:1.3mm;">AI dan Machine Learning</div>
+          <div class="chips"><span class="chip a">Integrasi LLM API</span><span class="chip a">OCR (PaddleOCR)</span><span class="chip">LightGBM</span><span class="chip">XGBoost</span><span class="chip">Scikit-learn</span><span class="chip">Pandas</span><span class="chip">Multi-agent</span></div></div>
+        <div><div style="font-family:'Space Grotesk'; font-weight:600; margin-bottom:1.3mm;">Mobile</div>
+          <div class="chips"><span class="chip">React Native</span><span class="chip">Kotlin</span><span class="chip">Jetpack Compose</span><span class="chip">Flutter</span><span class="chip">Java (Android)</span></div></div>
+        <div><div style="font-family:'Space Grotesk'; font-weight:600; margin-bottom:1.3mm;">Data dan Infrastruktur</div>
+          <div class="chips"><span class="chip a">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">DuckDB</span><span class="chip a">Docker</span><span class="chip">Git</span><span class="chip">Linux</span><span class="chip">Metabase</span><span class="chip">Odoo</span></div></div>
+        <div><div style="font-family:'Space Grotesk'; font-weight:600; margin-bottom:1.3mm;">Keamanan</div>
+          <div class="chips"><span class="chip">Penetration Testing Dasar</span><span class="chip">Vulnerability Research</span><span class="chip">CTF</span><span class="chip">Supply-chain Security</span></div></div>
+      </div>
+      <div style="margin-top:6mm; background:var(--accent-soft); padding:3.5mm 4mm; border-left:3px solid var(--accent);">
+        <div class="lbl" style="color:var(--accent); margin-bottom:0.8mm;">Cara saya bekerja</div>
+        <p style="font-size:9.4pt;">Mulai dari masalah pengguna, ukur hasilnya dengan angka, lalu iterasi. Setiap optimasi di VASKO, misalnya, diukur ulang di lingkungan yang dibatasi setara server produksi.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>DZAKI ALTHALSYAH · PORTOFOLIO 2026</span><span>02</span></div>
+</section>
+
+<!-- ============ 3. VASKO ============ -->
+<section class="page">
+  <div class="cs-head">
+    <div style="display:flex; align-items:flex-end;">
+      <span class="num">02</span>
+      <div><div class="kicker">Studi Kasus · Magang</div><h2>VASKO: Validasi Kontrak Berbasis AI</h2></div>
+    </div>
+    <div class="meta">PT PERTAMINA PATRA NIAGA · PERTAMINA CAMP 2026<br>AI ENGINEER INTERN · BACKEND DAN INTEGRASI AI<br>SEP 2026 - SEKARANG · TIM 3 ORANG</div>
+  </div>
+
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 8mm;">
+    <div><div class="lbl">Masalah</div>
+      <p>Setelah kontrak terbit, belum ada sistem untuk memeriksa kelengkapan dan isi paket kontrak. Satu paket bisa ratusan halaman, sebagian berupa hasil scan, dan pemeriksaannya masih manual.</p></div>
+    <div><div class="lbl">Peran Saya</div>
+      <p>Merancang arsitektur sistem dan membangun backend: skema basis data, alur validasi, layanan OCR, dan integrasi LLM. Tampilan dikerjakan rekan tim.</p></div>
+    <div><div class="lbl">Batasan</div>
+      <p>Mentor menargetkan validasi di bawah 5 menit, hasil harus sama setiap diulang, data tidak boleh disebar, dan server yang tersedia hanya VPS 4 core / 4 GB.</p></div>
+  </div>
+
+  <div class="lbl" style="margin-top:6mm;">Alur Sistem yang Saya Bangun</div>
+  <div class="flow">
+    <div class="step"><span class="t">01 · INPUT</span><b>Unggah Paket</b>PDF dan Word kontrak, amandemen, dan dokumen pendukung</div>
+    <div class="arr">→</div>
+    <div class="step"><span class="t">02 · OCR</span><b>Lapisan Teks</b>OCR lokal (PP-OCR, ONNX Runtime) untuk halaman scan</div>
+    <div class="arr">→</div>
+    <div class="step"><span class="t">03 · LLM</span><b>Baca Klausul</b>LLM membaca klausul dan mengutip sumbernya per halaman</div>
+    <div class="arr">→</div>
+    <div class="step"><span class="t">04 · RULES</span><b>Validasi</b>Aturan pemeriksaan, tingkat keyakinan, dan caching jawaban</div>
+    <div class="arr">→</div>
+    <div class="step"><span class="t">05 · OUTPUT</span><b>Hasil</b>Laporan PDF, impor Excel, Google Drive, dan master data</div>
+  </div>
+
+  <div style="display:grid; grid-template-columns: 1.25fr 1fr; gap: 10mm; margin-top: 6mm;">
+    <div><div class="lbl">Yang Saya Kerjakan</div>
+      <ul class="dot">
+        <li>Backend Next.js dan TypeScript dengan Prisma dan PostgreSQL, skema 26 tabel.</li>
+        <li>Layanan OCR Python yang memberi lapisan teks tak terlihat pada scan, sehingga alur validasi lama tetap jalan tanpa diubah.</li>
+        <li>OCR paralel dan pembacaan AI berjalan bersamaan untuk memangkas waktu tunggu.</li>
+        <li>Jawaban AI disimpan per isi permintaan, jadi dokumen yang sama selalu memberi hasil yang sama.</li>
+        <li>Uji beban di Docker dengan batas CPU dan memori setara VPS produksi.</li>
+      </ul>
+      <div class="chips" style="margin-top:4mm;"><span class="chip a">Next.js</span><span class="chip a">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip a">Python</span><span class="chip">PP-OCR</span><span class="chip">ONNX Runtime</span><span class="chip">LLM API</span><span class="chip">Docker</span></div>
+    </div>
+    <div>
+      <div class="lbl">Hasil</div>
+      <div style="display:grid; gap:4mm; margin-top:2mm;">
+        <div class="stat"><b>527 → 292-335 detik</b><span>validasi paket 268 halaman scan, hingga 45% lebih cepat</span></div>
+        <div class="stat"><b>5 dari 5 putaran</b><span>hasil validasi identik saat paket yang sama diproses ulang</span></div>
+        <div class="stat"><b>1,5 GB</b><span>memori puncak OCR dan backend, muat di VPS 4 GB</span></div>
+      </div>
+      <p class="caption" style="margin-top:4mm;">Tampilan aplikasi tidak disertakan karena memuat dokumen internal Pertamina.</p>
+    </div>
+  </div>
+  <div class="foot"><span>DZAKI ALTHALSYAH · PORTOFOLIO 2026</span><span>03</span></div>
+</section>
+
+<!-- ============ 4. SMS GUARD ============ -->
+<section class="page">
+  <div class="cs-head">
+    <div style="display:flex; align-items:flex-end;">
+      <span class="num">03</span>
+      <div><div class="kicker">Studi Kasus · Mobile dan Machine Learning</div><h2>SMS Guard dan URL Detection API</h2></div>
+    </div>
+    <div class="meta">PROYEK PRIBADI · 2026<br>GITHUB.COM/DZAKIALTHALSY/SMSGUARD<br>GITHUB.COM/DZAKIALTHALSY/PSD_MALICIOUS_URL_PREDICTION</div>
+  </div>
+  <div style="display:grid; grid-template-columns: 1.15fr 1fr; gap: 10mm;">
+    <div>
+      <div class="lbl">Masalah</div>
+      <p>Penipuan lewat link di SMS ("selamat Anda menang hadiah", "akun diblokir", "paket tertahan") masih banyak memakan korban, dan pengguna sering sudah menekan link sebelum sadar.</p>
+      <div class="lbl" style="margin-top:4.5mm;">Pendekatan</div>
+      <ul class="dot">
+        <li><b>Model:</b> LightGBM yang mengklasifikasikan URL aman atau berbahaya dari 38 fitur leksikal (entropi Shannon, struktur domain, kedalaman path, validitas TLD, deteksi IP). Cepat dan offline, tanpa membuka halaman web.</li>
+        <li><b>API:</b> FastAPI untuk prediksi satu URL, batch, dan unggah file CSV atau Excel.</li>
+        <li><b>Aplikasi:</b> React Native dengan modul native Java (BroadcastReceiver) yang menangkap SMS masuk bahkan saat aplikasi tertutup, lalu memunculkan notifikasi peringatan.</li>
+      </ul>
+      <div class="lbl" style="margin-top:4.5mm;">Hasil</div>
+      <ul class="dot">
+        <li>Setiap link di SMS dicek otomatis secara real-time dengan tiga tingkat risiko: Aman, Waspada, Berbahaya.</li>
+        <li>Hanya URL yang dikirim ke model, bukan isi SMS, sehingga privasi pengguna terjaga.</li>
+      </ul>
+      <div class="chips" style="margin-top:4mm;"><span class="chip a">React Native</span><span class="chip">Java</span><span class="chip a">FastAPI</span><span class="chip a">LightGBM</span><span class="chip">Pandas</span><span class="chip">Feature Engineering</span></div>
+    </div>
+    <div style="display:flex; gap:6mm; justify-content:center; align-items:flex-start;">
+      <div style="text-align:center;"><img src="img/sms-bad.jpg" style="width:52mm; border-radius:7mm; box-shadow:0 8px 22px rgba(14,14,26,0.22);"><div class="caption">Link penipuan: risiko 80%</div></div>
+      <div style="text-align:center; margin-top:10mm;"><img src="img/sms-good.jpg" style="width:52mm; border-radius:7mm; box-shadow:0 8px 22px rgba(14,14,26,0.22);"><div class="caption">Situs resmi: risiko 2%</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>DZAKI ALTHALSYAH · PORTOFOLIO 2026</span><span>04</span></div>
+</section>
+
+<!-- ============ 5. F1 ============ -->
+<section class="page">
+  <div class="cs-head">
+    <div style="display:flex; align-items:flex-end;">
+      <span class="num">04</span>
+      <div><div class="kicker">Studi Kasus · Machine Learning Full-stack</div><h2>F1 Pit Stop Predictor</h2></div>
+    </div>
+    <div class="meta">PROYEK MACHINE LEARNING · 2026<br>GITHUB.COM/DZAKIALTHALSY/<br>MACHINE-LEARNING_F1-PIT-NEXT-LAP-PREDICTION</div>
+  </div>
+  <div style="display:grid; grid-template-columns: 1.55fr 1fr; gap: 9mm;">
+    <div>
+      <img src="img/f1.jpg" class="shot" style="width:100%;">
+      <div class="caption">Aplikasi web yang berjalan: parameter balap di kiri, hasil prediksi model di kanan.</div>
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; margin-top: 6mm;">
+        <div class="stat"><b>95,9%</b><span>akurasi</span></div>
+        <div class="stat"><b>91,2%</b><span>F1-score</span></div>
+        <div class="stat"><b>98,8%</b><span>AUC</span></div>
+      </div>
+      <div class="lbl" style="margin-top:6mm;">Pipeline</div>
+      <div class="flow">
+        <div class="step"><span class="t">01</span><b>Data Lap</b>telemetri dan ban</div><div class="arr">→</div>
+        <div class="step"><span class="t">02</span><b>Cleaning</b>missing, outlier</div><div class="arr">→</div>
+        <div class="step"><span class="t">03</span><b>Fitur</b>encoding, scaling</div><div class="arr">→</div>
+        <div class="step"><span class="t">04</span><b>Model</b>3 algoritma boosting</div><div class="arr">→</div>
+        <div class="step"><span class="t">05</span><b>Deploy</b>FastAPI + React</div>
+      </div>
+    </div>
+    <div>
+      <div class="lbl">Masalah</div>
+      <p>Strategi pit stop menentukan hasil balapan. Pertanyaannya: dari data telemetri dan kondisi ban, apakah seorang pembalap akan masuk pit di lap berikutnya?</p>
+      <div class="lbl" style="margin-top:4.5mm;">Pendekatan</div>
+      <ul class="dot">
+        <li>Membersihkan data lap: penanganan missing value, outlier, encoding, scaling, dan seleksi fitur.</li>
+        <li>Membandingkan LightGBM, XGBoost, dan CatBoost, lalu mengoptimalkan ambang keputusan (0,85) untuk kelas pit yang jarang.</li>
+        <li>Menyajikan model lewat FastAPI dan antarmuka React dengan 15 parameter balap, untuk prediksi real-time maupun batch.</li>
+      </ul>
+      <div class="lbl" style="margin-top:4.5mm;">Kenapa Relevan</div>
+      <p>Pola kerjanya sama dengan analitik di industri otomotif dan manufaktur: data sensor dan kondisi komponen diubah menjadi keputusan yang bisa langsung dipakai.</p>
+      <div class="chips" style="margin-top:4mm;"><span class="chip a">Python</span><span class="chip a">LightGBM</span><span class="chip">XGBoost</span><span class="chip">CatBoost</span><span class="chip">Scikit-learn</span><span class="chip">React</span><span class="chip a">FastAPI</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>DZAKI ALTHALSYAH · PORTOFOLIO 2026</span><span>05</span></div>
+</section>
+
+<!-- ============ 6. PROYEK LAIN: DEV TOOLS & SECURITY ============ -->
+<section class="page">
+  <div class="kicker">05 / Proyek Lainnya · Developer Tools dan Keamanan</div>
+  <div style="display:grid; grid-template-columns: 1fr 1.15fr; gap: 9mm; margin-top: 4mm;">
+    <div>
+      <h3 style="font-size:17pt;">DepShield</h3>
+      <div class="mono" style="font-size:8pt; color:var(--muted); margin:1mm 0 2.5mm;">SUPPLY-CHAIN SECURITY SCANNER · 2026</div>
+      <p style="font-size:9.6pt;">CLI yang memeriksa dependensi npm dan pip <b>sebelum</b> diinstal, karena paket berbahaya biasanya bekerja saat instalasi, jauh sebelum tes dijalankan. Mendeteksi typosquatting (jarak Levenshtein), malware, dan CVE lewat OSV.dev, dengan keluaran tabel, JSON, atau SARIF untuk CI.</p>
+      <div class="term" style="margin-top:4mm;"><span class="b">$ depshield scan ./demo-app</span>
+<span class="g">✔</span> OSV malware   <span class="g">✔</span> CVE scan   <span class="g">✔</span> Metadata
+
+  <span class="r">CRITICAL    1 issue</span>
+  <span class="r">✗</span>  lodahs@4.17.21  [Malware]
+     reason: Malicious package
+
+  <span class="y">MEDIUM    4 issues</span>
+  <span class="y">◆</span>  reqeust@2.88.0  [Typosquat]
+     reason: Possible typosquat of "request"
+  <span class="y">◆</span>  express@4.17.1  [CVE]  cvss 5.0
+  <span class="y">◆</span>  axios@0.21.0    [CVE]  cvss 5.0
+
+<span class="m">  5 scanned · 1 critical · 4 medium · 1.8s</span></div>
+      <div class="caption">Keluaran asli DepShield pada contoh package.json berisi paket typo dan rentan.</div>
+      <div class="chips" style="margin-top:3mm;"><span class="chip a">Node.js</span><span class="chip">OSV.dev API</span><span class="chip">SARIF</span><span class="chip">CLI</span></div>
+    </div>
+    <div>
+      <h3 style="font-size:17pt;">depgraph</h3>
+      <div class="mono" style="font-size:8pt; color:var(--muted); margin:1mm 0 2.5mm;">SYSTEM DEPENDENCY GRAPH · ENTERPRISE ARCHITECTURE · 2026</div>
+      <p style="font-size:9.6pt;">Visualisasi interaktif graf dependensi paket npm. Pengguna bisa mengimpor <span class="mono" style="font-size:8.6pt;">package-lock.json</span> proyek nyata, menyaring paket sehat, usang, atau rentan, dan mendeteksi dependensi melingkar dengan DFS.</p>
+      <img src="img/depgraph.jpg" class="shot" style="width:100%; margin-top:4mm;">
+      <div class="caption">Node merah: paket rentan dan siklus dependensi yang terdeteksi otomatis.</div>
+      <div class="chips" style="margin-top:3mm;"><span class="chip a">React 19</span><span class="chip">Vite</span><span class="chip">React Flow</span><span class="chip">Dagre</span><span class="chip">Tailwind CSS</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>DZAKI ALTHALSYAH · PORTOFOLIO 2026</span><span>06</span></div>
+</section>
+
+<!-- ============ 7. PROYEK LAIN: AUTOMATION & DATA ============ -->
+<section class="page">
+  <div class="kicker">05 / Proyek Lainnya · Otomasi dan Data</div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 10mm; margin-top: 4mm;">
+    <div>
+      <h3 style="font-size:17pt;">AutoBuilder</h3>
+      <div class="mono" style="font-size:8pt; color:var(--muted); margin:1mm 0 2.5mm;">SISTEM MULTI-AGENT · PYTHON · 2026</div>
+      <p style="font-size:9.6pt;">Beri satu tema, dan agent menggarap proyek dari ide sampai jadi produk digital yang berfungsi: web app, CLI, ekstensi browser, atau API. Agent berjalan otomatis lalu berhenti di setiap milestone untuk minta persetujuan, dengan dashboard pemantauan real-time.</p>
+      <div class="flow" style="margin-top:4mm; flex-wrap:wrap; row-gap:2mm;">
+        <div class="step" style="flex:0 0 22%;"><span class="t">01</span><b>Plan</b></div><div class="arr">→</div>
+        <div class="step" style="flex:0 0 22%;"><span class="t">02</span><b>Scaffold</b></div><div class="arr">→</div>
+        <div class="step" style="flex:0 0 22%;"><span class="t">03</span><b>Build</b></div>
+      </div>
+      <div class="flow" style="margin-top:2mm;">
+        <div class="step" style="flex:0 0 22%;"><span class="t">04</span><b>Review</b></div><div class="arr">→</div>
+        <div class="step" style="flex:0 0 22%;"><span class="t">05</span><b>Deploy</b></div><div class="arr">→</div>
+        <div class="step" style="flex:0 0 22%;"><span class="t">06</span><b>Finalize</b></div>
+      </div>
+      <p class="caption">Tiga mode input: ide spesifik, tema luas yang dipecah jadi ide, atau mencari tren. Ada critic independen di tahap Review.</p>
+      <div class="chips" style="margin-top:3mm;"><span class="chip a">Python</span><span class="chip">Claude Agent SDK</span><span class="chip">Multi-agent</span><span class="chip">Dashboard Web</span></div>
+
+      <h3 style="font-size:17pt; margin-top:8mm;">Telecom Customer Churn Analytics</h3>
+      <div class="mono" style="font-size:8pt; color:var(--muted); margin:1mm 0 2.5mm;">PROJECT MANAGER · TIM 4 ORANG · 2026</div>
+      <p style="font-size:9.6pt;">Platform business intelligence untuk memantau churn, mengelompokkan pelanggan, dan memprioritaskan retensi, lengkap dengan skor risiko churn dari model ML.</p>
+      <div class="flow" style="margin-top:3mm;">
+        <div class="step"><span class="t">RAW</span><b>CSV</b></div><div class="arr">→</div>
+        <div class="step" style="background:#FBF3EA;"><span class="t">BRONZE</span><b>Mentah</b></div><div class="arr">→</div>
+        <div class="step" style="background:#F1F2F6;"><span class="t">SILVER</span><b>Bersih</b></div><div class="arr">→</div>
+        <div class="step" style="background:#FDF8E3;"><span class="t">GOLD</span><b>KPI</b></div><div class="arr">→</div>
+        <div class="step" style="background:var(--accent-soft);"><span class="t">BI</span><b>Metabase</b></div>
+      </div>
+      <div class="chips" style="margin-top:3mm;"><span class="chip a">DuckDB</span><span class="chip">PostgreSQL</span><span class="chip">Metabase</span><span class="chip a">Docker</span><span class="chip">FastAPI</span></div>
+    </div>
+    <div>
+      <h3 style="font-size:17pt;">Situs Portofolio Pribadi</h3>
+      <div class="mono" style="font-size:8pt; color:var(--muted); margin:1mm 0 2.5mm;">DZAKI-ALTHALSYAH-PORTOFOLIO.VERCEL.APP · 2026</div>
+      <p style="font-size:9.6pt;">Situs satu halaman dengan gaya "data editorial": tipografi besar, animasi saat scroll, kursor kustom, dan formulir kontak tanpa backend. Seluruh konten diambil dari satu berkas data agar mudah diperbarui.</p>
+      <img src="img/portfolio-hero.jpg" class="shot" style="width:100%; margin-top:4mm;">
+      <img src="img/portfolio-projects.jpg" class="shot" style="width:72%; margin:-14mm 0 0 28%; position:relative;">
+      <div class="chips" style="margin-top:3mm;"><span class="chip a">React 18</span><span class="chip">Vite</span><span class="chip">Tailwind CSS v4</span><span class="chip">Framer Motion</span><span class="chip">Vercel</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>DZAKI ALTHALSYAH · PORTOFOLIO 2026</span><span>07</span></div>
+</section>
+
+<!-- ============ 8. PENGALAMAN & KONTAK ============ -->
+<section class="page">
+  <div class="kicker">06 / Pengalaman, Organisasi, dan Sertifikasi</div>
+  <div style="display:grid; grid-template-columns: 1.35fr 1fr; gap: 12mm; margin-top: 4mm;">
+    <div>
+      <table style="width:100%; border-collapse:collapse;">
+        <tr style="border-top:2px solid var(--ink);"><td class="mono" style="width:30mm; font-size:8pt; color:var(--muted); padding:3mm 0; vertical-align:top;">SEP 2026 - KINI</td>
+          <td style="padding:3mm 0;"><b style="font-family:'Space Grotesk'; font-size:11.5pt;">AI Engineer Intern · PT Pertamina Patra Niaga</b><p style="font-size:9.2pt;">Pertamina Camp 2026. Backend dan integrasi AI aplikasi validasi kontrak VASKO.</p></td></tr>
+        <tr style="border-top:1px solid var(--line);"><td class="mono" style="font-size:8pt; color:var(--muted); padding:3mm 0; vertical-align:top;">2026 - KINI</td>
+          <td style="padding:3mm 0;"><b style="font-family:'Space Grotesk'; font-size:11.5pt;">Asisten Praktikum Administrasi Basis Data · Lab Sistem Informasi FILKOM UB</b><p style="font-size:9.2pt;">Membimbing praktikum, menjelaskan materi, serta memeriksa dan menilai tugas mahasiswa.</p></td></tr>
+        <tr style="border-top:1px solid var(--line);"><td class="mono" style="font-size:8pt; color:var(--muted); padding:3mm 0; vertical-align:top;">2025 - KINI</td>
+          <td style="padding:3mm 0;"><b style="font-family:'Space Grotesk'; font-size:11.5pt;">Vice Chair of Human Resources dan Staf Cyber Security · POROS FILKOM UB</b><p style="font-size:9.2pt;">Pengembangan anggota dan kaderisasi, riset kerentanan, pengujian sistem Linux, dan pelatihan keamanan siber.</p></td></tr>
+        <tr style="border-top:1px solid var(--line);"><td class="mono" style="font-size:8pt; color:var(--muted); padding:3mm 0; vertical-align:top;">2025</td>
+          <td style="padding:3mm 0;"><b style="font-family:'Space Grotesk'; font-size:11.5pt;">Penanggung Jawab Divisi Acara · COSMOS 2025</b><p style="font-size:9.2pt;">Mengelola workshop praktik keamanan siber dan kompetisi Capture The Flag.</p></td></tr>
+        <tr style="border-top:1px solid var(--line); border-bottom:1px solid var(--line);"><td class="mono" style="font-size:8pt; color:var(--muted); padding:3mm 0; vertical-align:top;">2025</td>
+          <td style="padding:3mm 0;"><b style="font-family:'Space Grotesk'; font-size:11.5pt;">Data Science Intern · BCC FILKOM UB</b><p style="font-size:9.2pt;">Magang intensif satu bulan, laporan mingguan, dan presentasi proyek model data di depan juri.</p></td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="lbl">Penghargaan dan Sertifikasi</div>
+      <ul class="dot" style="font-size:9.4pt;">
+        <li><b>Certificate of Appreciation</b>, UPN Veteran Jakarta (2021). Menemukan celah keamanan pada situs utama universitas lewat penetration testing.</li>
+        <li><b>Belajar Machine Learning untuk Pemula</b>, Dicoding (2026)</li>
+        <li><b>Belajar Dasar AI</b>, Dicoding (2026)</li>
+        <li><b>Belajar Dasar Visualisasi Data</b>, Dicoding (2025)</li>
+      </ul>
+      <div class="lbl" style="margin-top:5mm;">Pendidikan</div>
+      <p style="font-size:9.6pt;"><b>Universitas Brawijaya</b>, Fakultas Ilmu Komputer<br>S1 Sistem Informasi, semester 5 (2024 - sekarang)</p>
+    </div>
+  </div>
+  <div style="position:absolute; left:16mm; right:16mm; bottom:17mm; background:var(--ink); color:#fff; padding:6mm 8mm; display:flex; justify-content:space-between; align-items:center;">
+    <div><div class="mono" style="font-size:8pt; color:#A5B4FC; letter-spacing:0.08em;">MARI NGOBROL</div>
+      <div style="font-family:'Space Grotesk'; font-size:19pt; font-weight:700; margin-top:1mm;">Terima kasih sudah membaca.</div></div>
+    <div class="mono" style="font-size:8.8pt; line-height:1.8; text-align:right; color:#E5E7EB;">dz4ic7@gmail.com · +62 811-7818-801<br>github.com/dzakialthalsy<br>linkedin.com/in/dzaki-althalsyah-27z</div>
+  </div>
+  <div class="foot"><span>DZAKI ALTHALSYAH · PORTOFOLIO 2026</span><span>08</span></div>
+</section>
+
+</body>
+</html>
