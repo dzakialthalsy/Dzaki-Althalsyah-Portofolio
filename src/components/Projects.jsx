@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, Plus } from "lucide-react";
+import { ArrowUpRight, Lock, Plus } from "lucide-react";
 import Section from "./Section";
 import { PROJECTS } from "../data";
 import Magnetic from "./Magnetic";
@@ -32,7 +32,7 @@ export default function Projects() {
                   <span
                     className={`shrink-0 font-mono text-sm transition-colors ${isOpen ? "text-accent" : "text-white/40"}`}
                   >
-                    0{i + 1}
+                    {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
                     className={`text-2xl font-bold leading-tight transition-all duration-300 sm:text-4xl lg:text-5xl ${
@@ -44,7 +44,7 @@ export default function Projects() {
                 </div>
                 <div className="flex shrink-0 items-center gap-4 sm:gap-8">
                   <span className="hidden font-mono text-xs uppercase tracking-widest text-white/50 md:block">
-                    {p.category} — {p.year}
+                    {p.category} · {p.year}
                   </span>
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
@@ -70,7 +70,7 @@ export default function Projects() {
                     <div className="grid gap-8 pb-10 sm:grid-cols-12 sm:pl-14">
                       <div className="sm:col-span-8">
                         <p className="font-mono text-xs uppercase tracking-widest text-white/50 md:hidden">
-                          {p.category} — {p.year}
+                          {p.category} · {p.year}
                         </p>
                         <p className="mt-3 max-w-2xl leading-relaxed text-white/80 md:mt-0">
                           {p.desc}
@@ -87,6 +87,7 @@ export default function Projects() {
                         </div>
                       </div>
                       <div className="flex items-start sm:col-span-4 sm:justify-end">
+                        {p.link ? (
                         <Magnetic>
                           <a
                             href={p.link}
@@ -98,6 +99,12 @@ export default function Projects() {
                             <ArrowUpRight size={16} className="transition group-hover/link:rotate-45" />
                           </a>
                         </Magnetic>
+                        ) : (
+                          <span className="flex items-center gap-2 border-2 border-white/30 px-6 py-3 font-mono text-xs uppercase tracking-wide text-white/60">
+                            <Lock size={14} />
+                            {p.note ?? "Private repository"}
+                          </span>
+                        )}
                       </div>
                     </div>
                   </motion.div>

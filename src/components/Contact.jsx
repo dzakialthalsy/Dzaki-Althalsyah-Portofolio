@@ -69,7 +69,7 @@ export default function Contact() {
             <span className="text-accent">Let's talk.</span>
           </motion.p>
           <p className="mt-5 leading-relaxed text-slate-600">
-            Drop me a message — it lands straight in my inbox, and I'll get back
+            Drop me a message. It lands straight in my inbox, and I'll get back
             to you as soon as I can. Based in {PROFILE.location}.
           </p>
 
@@ -177,7 +177,7 @@ export default function Contact() {
                 animate={{ opacity: 1, x: 0 }}
                 className="flex items-center gap-2 font-mono text-sm font-semibold text-emerald-600"
               >
-                <CheckCircle2 size={16} /> Message sent — I'll get back to you soon.
+                <CheckCircle2 size={16} /> Message sent. I'll get back to you soon.
               </motion.p>
             )}
             {status === "error" && (
@@ -186,7 +186,7 @@ export default function Contact() {
                 animate={{ opacity: 1, x: 0 }}
                 className="flex items-center gap-2 font-mono text-sm font-semibold text-rose-600"
               >
-                <AlertCircle size={16} /> Something went wrong — email me at {PROFILE.email}.
+                <AlertCircle size={16} /> Something went wrong, please email me at {PROFILE.email}.
               </motion.p>
             )}
           </div>

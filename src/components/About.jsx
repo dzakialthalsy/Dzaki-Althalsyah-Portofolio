@@ -31,17 +31,19 @@ export default function About() {
           className="lg:col-span-7"
         >
           <p className="text-2xl leading-snug text-slate-700 sm:text-3xl sm:leading-snug">
-            I'm an <Mark>Information Systems student</Mark> at Universitas
-            Brawijaya with a deep focus on <Mark>Data Analysis</Mark>,{" "}
-            <Mark>Machine Learning</Mark>, and systems development.
+            I'm a 5th-semester <Mark>Information Systems student</Mark> at
+            Universitas Brawijaya, currently an <Mark>AI Engineer Intern</Mark> at
+            PT Pertamina Patra Niaga, building <Mark>backends and AI</Mark> that
+            replace manual work.
           </p>
           <p className="mt-8 text-lg leading-relaxed text-slate-600">
-            I've gained hands-on experience in information systems analysis and
-            software development through a variety of practical projects — from
-            churn-prediction models to a fully containerized business-intelligence
-            pipeline. Beyond data, I'm active in campus tech communities: exploring
-            open-source Linux systems and cyber security with POROS FILKOM UB, and
-            sharpening my craft through competitions and real-world builds.
+            At Pertamina I own the backend and AI integration of VASKO, a contract
+            validation platform that combines OCR and LLMs to check documents
+            hundreds of pages long. Outside work I ship end-to-end projects, from a
+            real-time SMS scam detector and an F1 pit-stop predictor to a
+            multi-agent app builder. On campus I'm a Database Administration lab
+            assistant at the Information Systems Laboratory and Vice Chair of Human
+            Resources at POROS FILKOM UB, where I also work on cyber security.
           </p>
           <p className="mt-5 font-mono text-sm text-slate-500">
             {"// currently exploring: "}

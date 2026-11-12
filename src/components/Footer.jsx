@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="overflow-hidden bg-ink pt-16 text-white">
       <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 sm:flex-row sm:items-end sm:justify-between sm:px-8">
         <p className="font-mono text-xs uppercase tracking-widest text-white/50">
-          © {year} {PROFILE.name} — Malang, ID
+          © {year} {PROFILE.name} · Malang, ID
         </p>
         <div className="flex gap-6 font-mono text-xs uppercase tracking-widest">
           <a href={PROFILE.github} target="_blank" rel="noreferrer" className="text-white/50 transition hover:text-accent">

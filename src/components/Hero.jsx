@@ -42,7 +42,7 @@ const lineReveal = {
 };
 
 function SpinBadge() {
-  const label = "OPEN TO WORK • DATA SCIENCE • MACHINE LEARNING • ";
+  const label = "OPEN TO WORK • AI ENGINEERING • BACKEND • ";
   return (
     <div className="relative h-36 w-36 sm:h-44 sm:w-44">
       <svg viewBox="0 0 100 100" className="spin-slow h-full w-full">
@@ -79,7 +79,7 @@ export default function Hero() {
           transition={{ delay: 0.1 }}
           className="font-mono text-xs text-slate-500 sm:text-sm"
         >
-          {"// PORTFOLIO — "}
+          {"// PORTFOLIO · "}
           {PROFILE.location.toUpperCase()}
         </motion.p>
 
